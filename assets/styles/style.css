@@ -6,6 +6,26 @@
     margin-inline: auto;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100px;
+    line-height: 100px;
+    align-items: center;
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        font-size: 18px;
+    }
+    border-bottom: 1px solid black;
+}
+
 main {
-    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    justify-content: center;
+    font-size: 2rem;
 }
