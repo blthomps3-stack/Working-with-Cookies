@@ -29,3 +29,28 @@ main {
     justify-content: center;
     font-size: 2rem;
 }
+
+dialog {
+    height: 260px;
+    width: 300px;
+    padding: 20px;
+    place-self: center;
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: rgb(55, 55, 245);
+    color: #fff;
+    font-weight: 600;
+}
+
+#settingsbtn {
+    background-color: #fff;
+    color: rgb(55, 55, 245);
+    border: 1px solid rgb(55, 55, 245);
+    margin-left: 10px;
+}
