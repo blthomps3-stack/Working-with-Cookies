@@ -6,6 +6,61 @@
     margin-inline: auto;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100px;
+    line-height: 100px;
+    align-items: center;
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        font-size: 18px;
+    }
+    border-bottom: 1px solid black;
+}
+
 main {
-    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+dialog {
+    height: 260px;
+    width: 300px;
+    padding: 20px;
+    place-self: center;
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: rgb(55, 55, 245);
+    color: #fff;
+    font-weight: 600;
+}
+
+#settingsbtn {
+    background-color: #fff;
+    color: rgb(55, 55, 245);
+    border: 1px solid rgb(55, 55, 245);
+    margin-left: 10px;
+}
+
+#settings:modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
 }

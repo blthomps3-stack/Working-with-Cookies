@@ -12,5 +12,49 @@
         <script src="./assets/scripts/app.js" defer></script>
     </head>
     <body>
+        <header>
+            <h1>Website</h1>
+            <nav>
+                <ul>
+                    <li>People</li>
+                    <li>Places</li>
+                    <li>Things</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ullam. Exercitationem aperiam obcaecati quasi tempora omnis placeat praesentium! Sed soluta repellendus animi magni. Laborum amet atque excepturi quas voluptatibus ipsum.</p>
+        </main>
+        <dialog id="cookies" closedby="none">
+            <h3>Cookies</h3>
+            <p>We use cookies to improve our experience with your use of our website. By clicking "Accept", you agree to the use of cookies for marketing and analytics purposes.</p>
+            <div>
+                <button id="acceptbtn">Accept</button>
+                <button id="settingsbtn">Settings</button>
+            </div>
+        </dialog>
+        <dialog id="settings" closedby="none">
+            <h3>Settings</h3>
+            <form id="settingsform" method="dialog">
+                <div class="option">
+                    <label for="browser">Browser</label>
+                    <input id="browser" type="checkbox" checked>
+                </div>
+                <div class="option">
+                    <label for="os">Operating System</label>
+                    <input id="os" type="checkbox" checked>
+                </div>
+                <div class="option">
+                    <label for="screenwidth">Screen width</label>
+                    <input id="screenwidth" type="checkbox" checked>
+                </div>
+                <div class="option">
+                    <label for="screenheight">Screen height</label>
+                    <input id="screenheight" type="checkbox" checked>
+                </div>
+                <button id="savebtn">Save preferences</button>
+            </form>
+        </dialog>
     </body>
 </html>
