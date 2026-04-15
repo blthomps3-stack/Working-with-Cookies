@@ -18,11 +18,35 @@ function setCookie(name, value) {
     document.cookie = cookieString;
 }
 
-if(document.cookie.length === 0){
-    cookiebox.showModal();
+function getCookie(name) {
+    const cookieList = document.cookie.split(';');
+    for(let i = 0; i < cookieList.length; i++){
+        if(cookieList[i].startsWith(name + '=')){
+            console.log(cookieList[i]);
+        }
+    }
+}
+
+function getBrowser(){
+    return(navigator.userAgent.split('/')[0]);
+}
+
+function getOS(){
+    return(navigator.userAgent.split('(')[1].split(';')[0]);
+}
+
+function submitSettings(){
+    browserchk.checked ? setCookie('browser', getBrowser()) : false;
+    oschk.checked ? setCookie('operating system', getOS()) : false; 
+    widthchk.checked ? setCookie('screen width', screen.width) : false;
+    heightchk.checked ? setCookie('screen height', screen.height) : false;
+    if(document.cookie.length === 0){
+        setCookie('nocookies', 'true');
+    }
 }
 
 acceptbtn.addEventListener('click', function(){
+    submitSettings();
     cookiebox.close();
 })
 
@@ -32,9 +56,12 @@ settingsbtn.addEventListener('click', function(){
 });
 
 
-form.addEventListener('submit', function(){
-    browserchk.checked ? setCookie('browser', 'test') : false;
-    oschk.checked ? setCookie('operating system', 'test') : false;
-    widthchk.checked ? setCookie('screen width', 'test') : false;
-    heightchk.checked ? setCookie('screen height', 'test') : false;
+form.addEventListener('submit', function() {
+    submitSettings()
 });
+
+setTimeout(() => {
+    if(document.cookie.length === 0){
+    cookiebox.showModal();
+    }
+}, 500);
