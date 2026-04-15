@@ -54,3 +54,13 @@ button {
     border: 1px solid rgb(55, 55, 245);
     margin-left: 10px;
 }
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+}
