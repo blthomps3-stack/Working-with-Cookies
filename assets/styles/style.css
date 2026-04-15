@@ -55,7 +55,7 @@ button {
     margin-left: 10px;
 }
 
-#settings {
+#settings:modal {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
