@@ -56,11 +56,41 @@ button {
 }
 
 #settings:modal {
+    height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     div {
         display: flex;
         justify-content: space-between;
+        line-height: 34px;
     }
+}
+
+input {
+    background-color: rgb(143, 143, 143);
+    appearance: none;
+    height: 20px;
+    width: 32px;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 100ms ease-in-out;
+}
+input:checked{
+    background-color: rgb(60, 130, 210);
+}
+
+input::after {
+    content: "";
+    background-color: white;
+    display:block;
+    aspect-ratio: 1;
+    height: 100%;
+    border: 3px solid rgb(92, 92, 92);
+    border-radius: 50%;
+    transition: translate 100ms ease-in;
+}
+input:checked::after {
+    border-color: rgb(20, 85, 155);
+    translate: 12px;
 }

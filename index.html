@@ -38,20 +38,32 @@
             <h3>Settings</h3>
             <form id="settingsform" method="dialog">
                 <div class="option">
-                    <label for="browser">Browser</label>
-                    <input id="browser" type="checkbox" checked>
+                    <p>Browser</p>
+                    <label for="browser" class="switch">
+                        <input id="browser" type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
                 </div>
                 <div class="option">
-                    <label for="os">Operating System</label>
-                    <input id="os" type="checkbox" checked>
+                    <p>Operating System</p>
+                    <label for="os" class="switch">
+                        <input id="os" type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
                 </div>
                 <div class="option">
-                    <label for="screenwidth">Screen width</label>
-                    <input id="screenwidth" type="checkbox" checked>
+                    <p>Screen Width</p>
+                    <label for="screenwidth" class="switch">
+                        <input id="screenwidth" type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
                 </div>
                 <div class="option">
-                    <label for="screenheight">Screen height</label>
-                    <input id="screenheight" type="checkbox" checked>
+                    <p>Screen Height</p>
+                    <label for="screenheight" class="switch">
+                        <input id="screenheight" type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
                 </div>
                 <button id="savebtn">Save preferences</button>
             </form>
